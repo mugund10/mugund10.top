@@ -1,34 +1,103 @@
 <!DOCTYPE html>
-<html lang="ta">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>முகுந்தன்.உச்சி</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #fafafa;
-            color: #333;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.2rem;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
-        }
-    </style>
+    <title>Mugundhan's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <h1>பக்கம் கட்டுமானத்தில் உள்ளது</h1>
-        <p>தற்போது <s>சிறகடிக்க</s> FLUTTER கற்றுக் கொண்டிருக்கிறேன், விரைவில் வருவேன். தயவுசெய்து காத்திருங்கள்!</p>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>Mugundhan Balasubramanian</h1>
+        <p>Enthusiastic Golang Developer with hands-on experience in building efficient APIs, writing clean code, and integrating systems. Eager to collaborate, optimize performance and grow with dynamic teams.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>LetsEncryptAcmeClient</h3>
+            <p><strong>August 2024</strong></p>
+            <p>Devised a client to manage TLS certificates with LetsEncrypt.org using the ACME protocol. Performed HTTP-01 challenge validation according to RFC8555. Automatically issues and renews TLS certificates.</p>
+            <p><strong>Tech:</strong> Go, HTTP | <strong>Libraries:</strong> acme(RFC8555)</p>
+            <a href="https://github.com/mugund10/LetsEncryptAcmeClient" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>DdnsCli</h3>
+            <p><strong>August 2024</strong></p>
+            <p>Built a command-line tool for managing dynamic DNS updates using the Name.com API. Minimized Public IP retrieval complexity using a custom web service. Continuously checks and updates the Domain's A record.</p>
+            <p><strong>Tech:</strong> Go, DNS, HTTP, AWS</p>
+            <a href="https://github.com/mugund10/dynamicdns" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>GoBlog</h3>
+            <p><strong>July 2024</strong></p>
+            <p>Developed a personal static blog site using Go. Integrated goldmark and goldmark-highlighting for better Markdown parsing and syntax highlighting.</p>
+            <p><strong>Tech:</strong> Go, HTML, CSS, Markdown, Oracle Cloud, GitHub</p>
+            <a href="https://github.com/mugund10/blog.openwaves.in" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>PGEE Preparation</h3>
+        <p><strong>July 2022 - May 2024</strong></p>
+        <p>Dedicated two years to preparing for the PGEE entrance exam, focusing on advanced technical topics such as networking, operating systems, data structures, and digital logic. Built a strong foundation in these areas and gained valuable knowledge and skills.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>B.E. Computer Science Engineering</strong> | University College of Engineering, Anna University, Tiruchirappalli</p>
+        <p><strong>CGPA:</strong> 7.59 (August 2018 - July 2022)</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Golang, Dart</li>
+            <li>Databases: PostgreSQL</li>
+            <li>Version Control: GitHub</li>
+            <li>Containerization: Docker</li>
+            <li>CI/CD Tools: Jenkins, GitHub Actions</li>
+            <li>Cloud Platforms: AWS, OCI</li>
+            <li>API Development: REST</li>
+            <li>Frameworks: Gin, gRPC, Flutter</li>
+            <li>Operating Systems: Linux</li>
+            <li>Languages: English, Tamil</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/learning/certificates/a47e7164d7df955dff7f73a4261bae6898934ee12c0334673bf5114e3781b814">Learning Go</a></li>
+            <li><a href="https://www.linkedin.com/learning/certificates/3ec1468d42e9e388ebb4f674247370c2ddd4ef741288bd1e2c459a67c95af28a">Treating Go as an Object-Oriented Language</a></li>
+            <li><a href="https://www.linkedin.com/learning/certificates/2d1fa3e55762721a1209a5441e1b86215e75ceaabcb8c88d69ac8eeebfb45222">HTTP Essential Training</a></li>
+            <li><a href="https://www.linkedin.com/learning/certificates/09063947bb4e872796cd9fad8120d3464eb67774317d2928d464c8ddb97d50ed">gRPC in Go</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:bjmugundhan@gmail.com">bjmugundhan@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mugund10" target="_blank">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/mugund10" target="_blank">GitHub Profile</a></p>
+    </section>
+
+    <footer>
+        <p>mugund10.top</p>
+    </footer>
 </body>
 </html>
